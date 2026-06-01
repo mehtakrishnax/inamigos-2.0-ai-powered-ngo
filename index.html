@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InAmigos Foundation 2.0 – Upgraded NGO Platform</title>
+  
+  <!-- SEO Best Practices Metadata -->
+  <meta name="description" content="InAmigos Foundation 2.0 is an upgraded, modern platform dedicated to food security, quality education, women's empowerment, animal welfare, and environmental conservation in India. Certified 80G, 12A, and NITI Aayog registered.">
+  <meta name="keywords" content="InAmigos, InAmigos Foundation, NGO India, Social Impact, Project Seva, Bachpanshala, Udaan, Govind Shukla, Bilaspur NGO, Donate India">
+  <meta name="author" content="InAmigos Foundation">
+  
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" href="https://inamigosfoundation.org.in/public/storage/settings/1744214680.jpg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body id="top">
+
+  <!-- Floating Navigation Header -->
+  <header class="header-nav" id="mainHeader">
+    <div class="nav-container">
+      <a href="#top" class="nav-brand" aria-label="InAmigos Home">
+        <!-- Theme-based Logo Switching -->
+        <img src="https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg" alt="InAmigos Foundation Logo" class="logo-theme logo-light">
+        <img src="https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg" alt="InAmigos Foundation Logo" class="logo-theme logo-dark">
+        <span class="gradient-text">InAmigos 2.0</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" role="navigation">
+        <a href="#top" class="nav-item active" data-translate="nav_home">Dashboard</a>
+        <a href="#about" class="nav-item" data-translate="nav_about">About</a>
+        <a href="#projects" class="nav-item" data-translate="nav_projects">Projects</a>
+        <a href="#ai-solutions" class="nav-item" data-translate="nav_ai">AI Solutions</a>
+        <a href="#volunteer-hub" class="nav-item" data-translate="nav_volunteer">Volunteer Hub</a>
+        <a href="#impact" class="nav-item" data-translate="nav_impact">Impact</a>
+        <a href="#stories" class="nav-item" data-translate="nav_stories">Stories</a>
+        <a href="#events" class="nav-item" data-translate="nav_events">Events</a>
+        <a href="#gallery" class="nav-item" data-translate="nav_gallery">Gallery</a>
+        <a href="#donor-portal" class="nav-item" data-translate="nav_donor">Donor Hub</a>
+        <a href="#contact" class="nav-item" data-translate="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <!-- Language Switcher EN / HI -->
+        <div class="lang-switcher" id="langSwitcher" role="button" aria-label="Toggle Language" tabindex="0">
+          <span class="lang-btn active" id="langEN">EN</span>
+          <span class="lang-btn" id="langHI">HI</span>
+        </div>
+        
+        <!-- Light / Dark Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Homepage Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="stat-indicator">●</span>
+          <span data-translate="hero_tag">Upgraded NGO Platform</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-translate="hero_title_1">Empowering Communities Through </span>
+          <span class="gradient-text" data-translate="hero_title_2">Smart Technologies </span>
+          <span data-translate="hero_title_3">and Compassion</span>
+        </h1>
+        <p class="hero-description" data-translate="hero_desc">
+          InAmigos Foundation merges human compassion with intelligent technology. Discover how we optimize resource allocation, match volunteers with active programs, forecast community needs, and translate help requests instantly.
+        </p>
+        <div class="hero-ctas">
+          <a href="#donor-portal" class="btn btn-primary" data-translate="hero_cta_donate">Donate Now</a>
+          <a href="#volunteer-hub" class="btn btn-secondary" data-translate="hero_cta_volunteer">Become a Volunteer</a>
+          <a href="#ai-solutions" class="btn btn-secondary" data-translate="hero_cta_explore">Explore AI Solutions</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="console-card">
+          <div class="console-header">
+            <div class="console-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="console-badge" data-translate="console_title">Resource Dispatch Logs</span>
+          </div>
+          <div class="console-feed" id="liveConsoleFeed">
+            <div class="feed-item">
+              <div class="feed-icon">🍱</div>
+              <div class="feed-info">
+                <h4>AI Volunteer Allocation Successful</h4>
+                <p>Allocated 5 volunteers to Project Seva Raipur center.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About InAmigos Section -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="about_title">Get to Know Us Better</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="about_subtitle">
+          InAmigos Foundation is a Section 8 registered non-profit organization registered with NITI Aayog (CSR-1), leading the digital transition of community care.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3 style="margin-bottom: 0.75rem;" data-translate="value_mission_title">Our Mission</h3>
+          <p style="font-size: 0.9rem;" data-translate="value_mission_desc">To create positive, long-lasting societal change through community empowerment, transparent volunteering channels, and intensive ground deployment.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">👁</div>
+          <h3 style="margin-bottom: 0.75rem;" data-translate="value_vision_title">Our Vision</h3>
+          <p style="font-size: 0.9rem;" data-translate="value_vision_desc">Uniting driven individuals to foster a more inclusive, compassionate, and empowered society, with a focus on serving underprivileged communities with dignity and care.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💎</div>
+          <h3 style="margin-bottom: 0.75rem;" data-translate="value_values_title">Core Values</h3>
+          <p style="font-size: 0.9rem;" data-translate="value_values_desc">Fostering absolute programmatic transparency, operational integrity, unconditional community support, and rapid scaling in every operations center.</p>
+        </div>
+      </div>
+
+      <!-- About Us Real Image Visual Block -->
+      <div style="margin-top: 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <h3 class="gradient-text" style="font-size: 1.85rem; margin-bottom: 1rem;">Bridging Gaps, Fostering Hope</h3>
+          <p style="margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary);">
+            Founded on September 23, 2020 by Mr. Govind Shukla, InAmigos Foundation has expanded from a local food relief taskforce into an accredited Section 8 non-profit organization. Licensed by the Central Government of India, we coordinate impactful corporate and social sector support.
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary);">
+            With registrations including NITI Aayog (CSR-1), 80G, 12A, and standard ISO 9001:2015 certifications, our processes represent absolute financial integrity. Donors can comfortably claim legal tax deductions while directly tracking their funds' ground deployment.
+          </p>
+        </div>
+        <div>
+          <!-- Official High-Quality Organic About Us Image -->
+          <img src="https://inamigosfoundation.org.in/public/storage/settings/1738236437.jpg" alt="InAmigos Volunteer Work" style="border-radius: var(--radius-lg); width: 100%; box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+
+      <!-- Journey Timeline -->
+      <div style="margin-top: 6rem; text-align: center;">
+        <h3 class="gradient-text-alt" style="font-size: 2rem;" data-translate="journey_title">Our Journey</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;" data-translate="journey_subtitle">Tracking milestones from community inception to 2026 technology deployment</p>
+      </div>
+
+      <div class="journey-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2020</div>
+          <div class="timeline-content">
+            <h4 data-translate="t1_title">Inception & Pandemic Relief</h4>
+            <p style="font-size: 0.85rem;" data-translate="t1_desc">InAmigos Foundation established on Sept 23, 2020 by Mr. Govind Shukla to mitigate community isolation during the global pandemic.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022</div>
+          <div class="timeline-content">
+            <h4 data-translate="t2_title">Project Expansion</h4>
+            <p style="font-size: 0.85rem;" data-translate="t2_desc">Formalized Section 8 non-profit status. Deployed Projects Seva, Bachpanshala, and Udaan across Chhattisgarh, feeding over 10,000 families.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024</div>
+          <div class="timeline-content">
+            <h4 data-translate="t3_title">CSR Accreditation</h4>
+            <p style="font-size: 0.85rem;" data-translate="t3_desc">Received NITI Aayog registration (CSR-1), 80G & 12A certifications. Scaled global training internships to support over 30,000 students globally.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2026</div>
+          <div class="timeline-content">
+            <h4 data-translate="t4_title">Smart Integration (2.0)</h4>
+            <p style="font-size: 0.85rem;" data-translate="t4_desc">Pioneered InAmigos 2.0 with custom matching tools, automated resource grids, and responsive donor portal ledgers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership Spot -->
+      <div style="margin-top: 6rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm); max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
+          <div style="text-align: center;">
+            <div style="width: 130px; height: 130px; border-radius: 50%; border: 3px solid var(--primary); margin: 0 auto 0.75rem auto; overflow: hidden; background: linear-gradient(135deg, var(--bg-hover), var(--primary)); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: var(--shadow-sm);">
+              👨‍💼
+            </div>
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">Govind Shukla</h4>
+            <p style="font-size: 0.75rem; color: var(--primary); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;" data-translate="lead_ceo">Founder & CEO</p>
+          </div>
+          <div>
+            <h3 class="gradient-text" style="font-size: 1.35rem; margin-bottom: 0.5rem;" data-translate="lead_title">A Note From Our Founder</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.75; font-style: italic;" data-translate="lead_quote">
+              "When we started InAmigos, the goal was simple: serve with dignity. In the digital age, compassion alone is a great start, but when coupled with modern technology, it transforms into an unstoppable catalyst for scalable, hyper-efficient human development."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="section-padding" id="projects" style="background: var(--bg-hover); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="projects_title">Our Primary Initiatives</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="projects_subtitle">
+          Discover our 6 core projects deployed inside active regions, backed by real performance metrics and responsive progress indicators.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: SEVA -->
+        <div class="project-card">
+          <div>
+            <!-- Real visual image instead of svg coordinates -->
+            <img src="https://inamigosfoundation.org.in/public/storage/slideshow/1738236132.jpg" alt="Project Seva distribution drive" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <h3 class="project-title" data-translate="p1_title">Project SEVA</h3>
+            <p class="project-description" data-translate="p1_desc">Providing food and clothing to underprivileged communities, including daily wage workers and the homeless.</p>
+          </div>
+          <div>
+            <div class="project-progress-container">
+              <div class="project-progress-header">
+                <span class="project-progress-label" data-translate="proj_target">Target Milestone Completion</span>
+                <span class="project-progress-val">84%</span>
+              </div>
+              <div class="project-progress-bar">
+                <div class="project-progress-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-metric">
+                <span data-translate="p_meals">Meals Distributed</span>
+                <span>50,000+</span>
+              </div>
+              <div class="project-metric">
+                <span data-translate="p_centers">Active Hubs</span>
+                <span>12 Centers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: BACHPANSHALA -->
+        <div class="project-card">
+          <div>
+            <img src="https://inamigosfoundation.org.in/public/storage/slideshow/1738235951.jpg" alt="Bachpanshala digital school children" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <h3 class="project-title" data-translate="p2_title">Project BACHPANSHALA</h3>
+            <p class="project-description" data-translate="p2_desc">Bridging educational gaps by providing underprivileged children with basic digital literacy, life skills, and school education support.</p>
+          </div>
+          <div>
+            <div class="project-progress-container">
+              <div class="project-progress-header">
+                <span class="project-progress-label" data-translate="proj_target">Target Milestone Completion</span>
+                <span class="project-progress-val">76%</span>
+              </div>
+              <div class="project-progress-bar">
+                <div class="project-progress-fill" style="width: 76%;"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-metric">
+                <span data-translate="p_kids">Students Taught</span>
+                <span>5,200+</span>
+              </div>
+              <div class="project-metric">
+                <span data-translate="p_laptops">Devices Deployed</span>
+                <span>450 Tablets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: UDAAN -->
+        <div class="project-card">
+          <div>
+            <img src="https://inamigosfoundation.org.in/public/storage/slideshow/1738235638.jpg" alt="Women Udaan tailoring collective" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <h3 class="project-title" data-translate="p3_title">Project UDAAN</h3>
+            <p class="project-description" data-translate="p3_desc">Dedicated to women's empowerment by promoting financial independence, skill development, and menstrual hygiene awareness.</p>
+          </div>
+          <div>
+            <div class="project-progress-container">
+              <div class="project-progress-header">
+                <span class="project-progress-label" data-translate="proj_target">Target Milestone Completion</span>
+                <span class="project-progress-val">91%</span>
+              </div>
+              <div class="project-progress-bar">
+                <div class="project-progress-fill" style="width: 91%;"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-metric">
+                <span data-translate="p_women">Self-Reliant Women</span>
+                <span>1,250+</span>
+              </div>
+              <div class="project-metric">
+                <span data-translate="p_guilds">Self Help Collectives</span>
+                <span>35 Collectives</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: JEEV -->
+        <div class="project-card">
+          <div>
+            <img src="https://inamigosfoundation.org.in/public/storage/slideshow/1738235697.jpg" alt="Animal welfare rescue drive Jeev" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <h3 class="project-title" data-translate="p4_title">Project JEEV</h3>
+            <p class="project-description" data-translate="p4_desc">An animal welfare initiative that rescues, protects, and feeds stray animals, with a dedicated local volunteer response network.</p>
+          </div>
+          <div>
+            <div class="project-progress-container">
+              <div class="project-progress-header">
+                <span class="project-progress-label" data-translate="proj_target">Target Milestone Completion</span>
+                <span class="project-progress-val">68%</span>
+              </div>
+              <div class="project-progress-bar">
+                <div class="project-progress-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-metric">
+                <span data-translate="p_animals">Strays Fed Daily</span>
+                <span>50+ Animals</span>
+              </div>
+              <div class="project-metric">
+                <span data-translate="p_rescues">Successful Rescues</span>
+                <span>980+ Cases</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: PRAKRITI -->
+        <div class="project-card">
+          <div>
+            <img src="https://inamigosfoundation.org.in/public/storage/slideshow/1738236201.jpg" alt="Prakriti environment tree saplings planting" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <h3 class="project-title" data-translate="p5_title">Project PRAKRITI</h3>
+            <p class="project-description" data-translate="p5_desc">Advocating for environmental conservation and sustainability through urban plantation drives and plastic recycling camps.</p>
+          </div>
+          <div>
+            <div class="project-progress-container">
+              <div class="project-progress-header">
+                <span class="project-progress-label" data-translate="proj_target">Target Milestone Completion</span>
+                <span class="project-progress-val">80%</span>
+              </div>
+              <div class="project-progress-bar">
+                <div class="project-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-metric">
+                <span data-translate="p_trees">Saplings Planted</span>
+                <span>20,000+</span>
+              </div>
+              <div class="project-metric">
+                <span data-translate="p_co2">Estimated CO2 Off-set</span>
+                <span>80 Tons / Yr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: VIKAS -->
+        <div class="project-card">
+          <div>
+            <img src="https://inamigosfoundation.org.in/public/storage/settings/1738236437.jpg" alt="Vikas skills internship candidates" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <h3 class="project-title" data-translate="p6_title">Project VIKAS</h3>
+            <p class="project-description" data-translate="p6_desc">Facilitating skill development and employability through internships in fields such as data operations, digital marketing, and social work.</p>
+          </div>
+          <div>
+            <div class="project-progress-container">
+              <div class="project-progress-header">
+                <span class="project-progress-label" data-translate="proj_target">Target Milestone Completion</span>
+                <span class="project-progress-val">95%</span>
+              </div>
+              <div class="project-progress-bar">
+                <div class="project-progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-metric">
+                <span data-translate="p_interns">Interns Trained</span>
+                <span>30,000+</span>
+              </div>
+              <div class="project-metric">
+                <span data-translate="p_employment">Placement Rate</span>
+                <span>88% Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Solutions Section -->
+  <section class="section-padding" id="ai-solutions">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="ai_title">Intelligent Social Solutions</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="ai_subtitle">
+          Click any card to interact with the active simulated models of our NGO technology suite.
+        </p>
+      </div>
+
+      <div class="ai-solutions-dock">
+        <!-- 1. AI Volunteer Assistant -->
+        <div class="ai-solution-card" onclick="openAIModal('modalAssistant')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">💬</div>
+            <span class="ai-solution-badge" data-translate="ai_live">Active Assistant</span>
+          </div>
+          <h3 data-translate="ai1_title">AI Volunteer Assistant</h3>
+          <p data-translate="ai1_desc">Intelligent chat assistant for quick guidance, center navigation, and FAQ translation.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_interact">Open Chat Box</span>
+          </div>
+        </div>
+
+        <!-- 2. AI Volunteer Matching System -->
+        <div class="ai-solution-card" onclick="openAIModal('modalMatching')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">🧬</div>
+            <span class="ai-solution-badge">Matcher</span>
+          </div>
+          <h3 data-translate="ai2_title">AI Volunteer Matcher</h3>
+          <p data-translate="ai2_desc">Matches your specific skill sets and interests with the optimal project match.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_match">Check Alignment</span>
+          </div>
+        </div>
+
+        <!-- 3. Smart Donation Advisor -->
+        <div class="ai-solution-card" onclick="openAIModal('modalAdvisor')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">💰</div>
+            <span class="ai-solution-badge">Advisor</span>
+          </div>
+          <h3 data-translate="ai3_title">Smart Donation Advisor</h3>
+          <p data-translate="ai3_desc">Suggests custom funding portfolios based on target interests and impact fields.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_advise">Get Proposal</span>
+          </div>
+        </div>
+
+        <!-- 4. AI Impact Predictor -->
+        <div class="ai-solution-card" onclick="openAIModal('modalPredictor')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">🔮</div>
+            <span class="ai-solution-badge">Predictor</span>
+          </div>
+          <h3 data-translate="ai4_title">AI Impact Predictor</h3>
+          <p data-translate="ai4_desc">Translates donation sums into concrete beneficiaries and ecological growth metrics.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_predict">Calculate Forecast</span>
+          </div>
+        </div>
+
+        <!-- 5. AI Language Assistant -->
+        <div class="ai-solution-card" onclick="toggleLanguageManual()" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">🗣</div>
+            <span class="ai-solution-badge">Translation</span>
+          </div>
+          <h3 data-translate="ai5_title">Bilingual Language Assistant</h3>
+          <p data-translate="ai5_desc">Seamless switching between English and Hindi translation dictionaries across the web UI.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_translate">Toggle Language</span>
+          </div>
+        </div>
+
+        <!-- 6. AI Success Story Generator -->
+        <div class="ai-solution-card" onclick="openAIModal('modalStory')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">✍</div>
+            <span class="ai-solution-badge">Storytelling</span>
+          </div>
+          <h3 data-translate="ai6_title">AI Story Synthesizer</h3>
+          <p data-translate="ai6_desc">Generates human-centric narrative transformations from localized ground reports.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_story">Synthesize Narrative</span>
+          </div>
+        </div>
+
+        <!-- 7. AI Grant Recommendation Engine -->
+        <div class="ai-solution-card" onclick="openAIModal('modalGrant')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">🛡</div>
+            <span class="ai-solution-badge">Grants</span>
+          </div>
+          <h3 data-translate="ai7_title">Grant Match Engine</h3>
+          <p data-translate="ai7_desc">Matches NGO targets with available active CSR schemes and NITI Aayog proposals.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_grant">Match Grants</span>
+          </div>
+        </div>
+
+        <!-- 8. AI Resource Allocation Dashboard -->
+        <div class="ai-solution-card" onclick="scrollToSection('impact')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">🛰</div>
+            <span class="ai-solution-badge" data-translate="ai_complex">Interactive Map</span>
+          </div>
+          <h3 data-translate="ai8_title">Resource Allocation Grid</h3>
+          <p data-translate="ai8_desc">Interactive routing engine modeling logistical dispatch metrics in Chhattisgarh zones.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_alloc">Scroll to Dashboard</span>
+          </div>
+        </div>
+
+        <!-- 9. AI Beneficiary Support Assistant -->
+        <div class="ai-solution-card" onclick="openAIModal('modalBeneficiary')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">🤝</div>
+            <span class="ai-solution-badge">Lookup</span>
+          </div>
+          <h3 data-translate="ai9_title">Beneficiary Support Finder</h3>
+          <p data-translate="ai9_desc">Helps underprivileged citizens find the nearest distribution base or educational hub.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_locate">Locate Services</span>
+          </div>
+        </div>
+
+        <!-- 10. Predictive Campaign Analytics -->
+        <div class="ai-solution-card" onclick="openAIModal('modalAnalytics')" role="button">
+          <div class="ai-solution-head">
+            <div class="ai-solution-icon">📊</div>
+            <span class="ai-solution-badge">Analytics</span>
+          </div>
+          <h3 data-translate="ai10_title">Predictive Outreach Analytics</h3>
+          <p data-translate="ai10_desc">Statistical model showcasing anticipated growth and outreach projections.</p>
+          <div class="ai-action-indicator">
+            <span data-translate="ai_btn_analytics">Analyze Metrics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Hub Section -->
+  <section class="section-padding" id="volunteer-hub" style="background: var(--bg-hover); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div>
+          <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;" data-translate="vol_title">Become an InAmigos Volunteer</h2>
+          <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--text-secondary);" data-translate="vol_desc_1">
+            Volunteering with InAmigos Foundation is entirely structured through automated skills coordination. By utilizing the 2.0 Matching Algorithm, we place digital strategists, graphic handlers, food route coordinators, and teaching supervisors exactly where their impact is maximized.
+          </p>
+          <p style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted);" data-translate="vol_desc_2">
+            *Note: Active internships under Project Vikas provide academic and placement endorsements upon programmatic reviews. Join 30,000+ trained candidates globally.
+          </p>
+          <button class="btn btn-primary" onclick="openAIModal('modalMatching')" data-translate="vol_cta_match">Test My Matching Score</button>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;" data-translate="vol_form_title">Quick Registration</h3>
+          <form id="volunteerForm" onsubmit="handleVolunteerReg(event)">
+            <div class="form-group">
+              <label for="volName" data-translate="f_name">Full Name</label>
+              <input type="text" id="volName" class="form-input" required placeholder="e.g. Rohan Sharma">
+            </div>
+            <div class="form-group">
+              <label for="volEmail" data-translate="f_email">Email Address</label>
+              <input type="email" id="volEmail" class="form-input" required placeholder="e.g. rohan@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="volSkills" data-translate="f_skill">Key Skill Set</label>
+              <input type="text" id="volSkills" class="form-input" required placeholder="e.g. Teaching, Digital Marketing, Food prep">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="vol_btn_submit">Register in Volunteer Registry</button>
+          </form>
+          <div id="volFeedback" style="margin-top: 1rem; color: var(--primary); font-weight: 700; font-size: 0.9rem; text-align: center;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Dashboard Section -->
+  <section class="section-padding" id="impact">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="imp_title">Real-Time Impact Dashboard</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="imp_subtitle">
+          Explore our certified social performance vectors, lives directly impacted, and structural dispatches computed live.
+        </p>
+      </div>
+
+      <div class="impact-stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-info">
+            <h3 class="count-up" data-target="50000">0</h3>
+            <p data-translate="stat_lives">Total Beneficiaries</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌱</div>
+          <div class="stat-info">
+            <h3 class="count-up" data-target="20000">0</h3>
+            <p data-translate="stat_trees">Saplings Planted</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🍱</div>
+          <div class="stat-info">
+            <h3 class="count-up" data-target="50000">0</h3>
+            <p data-translate="stat_meals">Meals Distributed</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📖</div>
+          <div class="stat-info">
+            <h3 class="count-up" data-target="30000">0</h3>
+            <p data-translate="stat_interns">Interns Trained</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🤝</div>
+          <div class="stat-info">
+            <h3 class="count-up" data-target="200">0</h3>
+            <p data-translate="stat_vols">Registered Volunteers</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🏡</div>
+          <div class="stat-info">
+            <h3 class="count-up" data-target="28">0</h3>
+            <p data-translate="stat_comm">States Covered</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resource Allocation Simulator Interface -->
+      <div style="margin-top: 5rem;">
+        <h3 class="gradient-text-alt" style="font-size: 1.75rem; text-align: center; margin-bottom: 2rem;" data-translate="alloc_title">Smart Resource Dispatch Dashboard</h3>
+        
+        <div class="resource-allocator-ui">
+          <div class="region-node-list" id="regionNodeList">
+            <!-- Rendered inside dashboard.js -->
+          </div>
+          
+          <div class="dispatch-map-container">
+            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; margin-bottom: 1rem;">
+              <span data-translate="alloc_sim">Logistics Dispatch Route Visualizer</span>
+              <span style="color: var(--primary);" id="dispatchLogs">System: Optimal Routes Active</span>
+            </div>
+            
+            <svg class="map-svg-canvas" viewBox="0 0 400 400" id="mapSvgCanvas">
+              <!-- Central Dispatch Base (Raipur Hub) -->
+              <line x1="200" y1="200" x2="100" y2="100" stroke="rgba(0, 204, 131, 0.2)" stroke-width="2" class="dispatch-route" id="routeDurg" />
+              <line x1="200" y1="200" x2="300" y2="120" stroke="rgba(0, 204, 131, 0.2)" stroke-width="2" class="dispatch-route" id="routeBilaspur" />
+              <line x1="200" y1="200" x2="210" y2="340" stroke="rgba(0, 204, 131, 0.2)" stroke-width="2" class="dispatch-route" id="routeBastar" />
+              <line x1="200" y1="200" x2="90" y2="280" stroke="rgba(0, 204, 131, 0.2)" stroke-width="2" class="dispatch-route" id="routeRajnandgaon" />
+              
+              <circle cx="200" cy="200" r="16" fill="rgba(0, 204, 131, 0.08)" />
+              <circle cx="200" cy="200" r="6" fill="var(--primary)" />
+              
+              <!-- Regional Targets -->
+              <g class="map-node" onclick="triggerNodeAlloc('Durg')" transform="translate(100, 100)">
+                <circle cx="0" cy="0" r="5" fill="var(--primary)" />
+              </g>
+              <g class="map-node" onclick="triggerNodeAlloc('Bilaspur')" transform="translate(300, 120)">
+                <circle cx="0" cy="0" r="5" fill="var(--primary)" />
+              </g>
+              <g class="map-node" onclick="triggerNodeAlloc('Bastar')" transform="translate(210, 340)">
+                <circle cx="0" cy="0" r="5" fill="var(--accent)" />
+              </g>
+              <g class="map-node" onclick="triggerNodeAlloc('Rajnandgaon')" transform="translate(90, 280)">
+                <circle cx="0" cy="0" r="5" fill="var(--primary)" />
+              </g>
+              
+              <!-- Text markers -->
+              <text x="210" y="195" fill="var(--text-primary)" font-size="9" font-family="sans-serif" font-weight="600">Raipur Hub</text>
+              <text x="110" y="95" fill="var(--text-primary)" font-size="9" font-family="sans-serif">Durg</text>
+              <text x="310" y="115" fill="var(--text-primary)" font-size="9" font-family="sans-serif">Bilaspur</text>
+              <text x="220" y="335" fill="var(--text-primary)" font-size="9" font-family="sans-serif">Bastar</text>
+              <text x="100" y="275" fill="var(--text-primary)" font-size="9" font-family="sans-serif">Rajnandgaon</text>
+            </svg>
+            
+            <div style="margin-top: 1rem; text-align: center;">
+              <button class="btn btn-secondary" onclick="simulateAutomatedAlloc()" style="font-size: 0.8rem; padding: 0.5rem 1.25rem;" data-translate="alloc_recalc">Recalculate Optimal Routes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories / Volunteers Section -->
+  <section class="section-padding" id="stories" style="background: var(--bg-hover); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="st_title">Success Chronicles</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="st_subtitle">
+          Real human transitions enabled through InAmigos digital networks.
+        </p>
+      </div>
+
+      <!-- Testimonial Slider Structure -->
+      <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm); position: relative;">
+        <div id="storyCarouselContent">
+          <div class="story-slide active">
+            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div style="width: 64px; height: 64px; border-radius: 50%; font-size: 2.25rem; display: flex; align-items: center; justify-content: center; background: rgba(0, 204, 131, 0.08);">👩</div>
+              <div>
+                <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Shreya Mandavi</h4>
+                <p style="font-size: 0.8rem; color: var(--primary);" data-translate="st_c1_role">Project Udaan Beneficiary - Bastar Self Help Guild</p>
+              </div>
+            </div>
+            <p style="font-style: italic; font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary);" data-translate="st_c1_quote">
+              "Being part of the InAmigos sewing guild helped me establish a stable monthly salary. In 2.0, the success stories finder shared my products online, immediately linking me to wholesale corporate vendors in Raipur."
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.75rem;" id="carouselDots">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--primary); cursor: pointer;" onclick="switchStorySlide(0)"></span>
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: rgba(0, 204, 131, 0.15); cursor: pointer;" onclick="switchStorySlide(1)"></span>
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: rgba(0, 204, 131, 0.15); cursor: pointer;" onclick="switchStorySlide(2)"></span>
+        </div>
+      </div>
+
+      <!-- Real Volunteers Spotlight Grid -->
+      <div style="margin-top: 6rem; text-align: center;">
+        <h3 class="gradient-text-alt" style="font-size: 2rem;">Our Dedicated Coordinators</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">Connecting active program grids with local tribal segments</p>
+      </div>
+      
+      <div class="projects-grid" style="margin-top: 3rem;">
+        <!-- Faiz Khan -->
+        <div class="value-card" style="padding: 1.5rem; text-align: center;">
+          <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1rem auto; overflow: hidden; border: 2px solid var(--primary); box-shadow: var(--shadow-sm);">
+            <img src="https://inamigosfoundation.org.in/public/storage/volunteers/1738081237.jpg" alt="Faiz Khan Volunteer" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 700;">Faiz Khan</h4>
+          <p style="font-size: 0.8rem; color: var(--primary); font-weight: 600; text-transform: uppercase;">Volunteer Supervisor</p>
+          <p style="font-size: 0.775rem; color: var(--text-muted); margin-top: 0.5rem;">Uttar Pradesh Center</p>
+        </div>
+
+        <!-- Manavi Jaiswal -->
+        <div class="value-card" style="padding: 1.5rem; text-align: center;">
+          <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1rem auto; overflow: hidden; border: 2px solid var(--primary); box-shadow: var(--shadow-sm);">
+            <img src="https://inamigosfoundation.org.in/public/storage/volunteers/1738127845.jpg" alt="Manavi Jaiswal Volunteer" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 700;">Manavi Jaiswal</h4>
+          <p style="font-size: 0.8rem; color: var(--primary); font-weight: 600; text-transform: uppercase;">Volunteer Associate</p>
+          <p style="font-size: 0.775rem; color: var(--text-muted); margin-top: 0.5rem;">Chhattisgarh Center</p>
+        </div>
+
+        <!-- Akash -->
+        <div class="value-card" style="padding: 1.5rem; text-align: center;">
+          <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 1rem auto; overflow: hidden; border: 2px solid var(--primary); box-shadow: var(--shadow-sm);">
+            <img src="https://inamigosfoundation.org.in/public/storage/volunteers/1738080678.jpg" alt="Akash Volunteer" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h4 style="font-size: 1.1rem; font-weight: 700;">Akash</h4>
+          <p style="font-size: 0.8rem; color: var(--primary); font-weight: 600; text-transform: uppercase;">Volunteer Associate</p>
+          <p style="font-size: 0.775rem; color: var(--text-muted); margin-top: 0.5rem;">Chhattisgarh Center</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events and Campaigns Section -->
+  <section class="section-padding" id="events">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="ev_title">Upcoming Campaigns & Drives</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="ev_subtitle">
+          Register to participate or coordinate in the nearest community drives.
+        </p>
+      </div>
+
+      <div class="events-grid">
+        <!-- Event 1: World Water Day -->
+        <div class="event-card">
+          <div class="event-header">
+            <span class="event-tag" data-translate="ev_tag_seva">Community Drive</span>
+            <div class="event-countdown" data-endtime="2026-06-22T09:00:00">
+              <div class="countdown-box"><span class="days">14</span><span data-translate="ev_d">Days</span></div>
+              <div class="countdown-box"><span class="hours">03</span><span data-translate="ev_h">Hrs</span></div>
+              <div class="countdown-box"><span class="mins">45</span><span data-translate="ev_m">Mins</span></div>
+            </div>
+          </div>
+          <div style="margin: 1rem 0;">
+            <img src="https://inamigosfoundation.org.in/public/storage/events/1738238109.jpg" alt="World Water Day" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+            <h3 class="event-title" data-translate="ev1_title">World Water Day 2026</h3>
+            <div class="event-info">
+              <div class="event-info-item">📍 <span data-translate="ev1_loc">Bilaspur Administrative Hub</span></div>
+              <div class="event-info-item">⏰ <span>09:00 AM IST onwards</span></div>
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="triggerEventReg('World Water Day 2026')" data-translate="ev_btn_reg">Register as Coordinator</button>
+        </div>
+
+        <!-- Event 2: Happiness Day -->
+        <div class="event-card">
+          <div class="event-header">
+            <span class="event-tag" style="background: rgba(255, 74, 121, 0.06); color: var(--accent);" data-translate="ev_tag_prakriti">Social Inclusion</span>
+            <div class="event-countdown" data-endtime="2026-06-20T10:00:00">
+              <div class="countdown-box"><span class="days">24</span><span data-translate="ev_d">Days</span></div>
+              <div class="countdown-box"><span class="hours">12</span><span data-translate="ev_h">Hrs</span></div>
+              <div class="countdown-box"><span class="mins">10</span><span data-translate="ev_m">Mins</span></div>
+            </div>
+          </div>
+          <div style="margin: 1rem 0;">
+            <img src="https://inamigosfoundation.org.in/public/storage/events/1738135259.jpeg" alt="Happiness Day Drive" style="width: 100%; height: 160px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+            <h3 class="event-title" data-translate="ev2_title">International Day of Happiness</h3>
+            <div class="event-info">
+              <div class="event-info-item">📍 <span data-translate="ev2_loc">Raipur Railway Colony Shelters</span></div>
+              <div class="event-info-item">⏰ <span>10:00 AM IST onwards</span></div>
+            </div>
+          </div>
+          <button class="btn btn-accent" onclick="triggerEventReg('Happiness Day Drive')" data-translate="ev_btn_reg">Register as Coordinator</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="section-padding" id="gallery" style="background: var(--bg-hover); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="g_title">Social Action Gallery</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="g_subtitle">
+          Visual chronicles of our active volunteers, education hubs, and environment projects.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery 1 -->
+        <div class="gallery-item">
+          <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051485.jpg" alt="Child digital literacy classes">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Project Bachpanshala</span>
+            <h4 class="gallery-title" data-translate="g1_title">Slum Nutrition Drive</h4>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="gallery-item">
+          <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051466.jpg" alt="Women Udaan guild workshop">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Project Udaan</span>
+            <h4 class="gallery-title" data-translate="g2_title">Tablet Literacy Session</h4>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="gallery-item">
+          <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051449.jpg" alt="Seva food packet distributions">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Project Seva</span>
+            <h4 class="gallery-title" data-translate="g3_title">Women Guild Workshop</h4>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="gallery-item">
+          <img src="https://inamigosfoundation.org.in/public/storage/gallery/1743051438.jpg" alt="Plantations saplings care">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Project Prakriti</span>
+            <h4 class="gallery-title" data-translate="g4_title">Green Seed Planting</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donor Dashboard Portal -->
+  <section class="section-padding" id="donor-portal">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="don_title">Donor Command Center</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="don_subtitle">
+          Access your personalized ledger, verified digital tax certificates, and target donation indicators.
+        </p>
+      </div>
+
+      <!-- Guest Login -->
+      <div class="donor-unauthorized" id="donorAuthBlock">
+        <div class="donor-unauthorized-icon">🔒</div>
+        <h3 style="margin-bottom: 1rem;" data-translate="don_lock_title">Secure Ledger Portal</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="don_lock_desc">
+          For demo safety, enter any username to instantly unlock a premium donor simulation dashboard containing previous transaction lists.
+        </p>
+        
+        <form onsubmit="handleDonorLogin(event)" style="max-width: 300px; margin: 0 auto;">
+          <div class="form-group">
+            <input type="text" id="donorUsername" class="form-input" required placeholder="Enter Your Name" style="text-align: center;">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="don_btn_unlock">Access Donor Ledger</button>
+        </form>
+      </div>
+
+      <!-- Logged In active view -->
+      <div class="donor-portal-wrap" id="donorActiveDashboard" style="display: none;">
+        <div class="donor-portal-header">
+          <div class="donor-badge-wrap">
+            <div class="donor-avatar" id="donorAvatarText">VS</div>
+            <div style="text-align: left;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);" id="donorNameText">Vikram Sharma</h3>
+              <span class="donor-tier" data-translate="don_tier">Pioneer Patron</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-secondary" onclick="openAIModal('modalAdvisor')" style="font-size: 0.8rem; padding: 0.5rem 1.25rem;" data-translate="don_btn_alloc">Smart Advisory</button>
+            <button class="btn btn-secondary" onclick="handleDonorLogout()" style="font-size: 0.8rem; padding: 0.5rem 1.25rem; border-color: rgba(255,50,50,0.2);" data-translate="don_btn_logout">Logout</button>
+          </div>
+        </div>
+
+        <div class="donor-dashboard-grid">
+          <!-- Ledger Table -->
+          <div class="ledger-card">
+            <h3 style="font-size: 1.15rem; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;" data-translate="ledger_title">Certified Donation History</h3>
+            
+            <div class="ledger-table-wrap">
+              <table class="ledger-table">
+                <thead>
+                  <tr>
+                    <th data-translate="h_date">Date</th>
+                    <th data-translate="h_txn">Txn ID</th>
+                    <th data-translate="h_project">Target Initiative</th>
+                    <th data-translate="h_amount">Amount</th>
+                    <th data-translate="h_status">CSR Status</th>
+                    <th data-translate="h_cert">Certificate</th>
+                  </tr>
+                </thead>
+                <tbody id="ledgerTableBody">
+                  <!-- In donor.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Achievements Ribbons -->
+          <div class="achievements-card">
+            <h3 style="font-size: 1.15rem; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;" data-translate="ach_title">Social Achievements</h3>
+            
+            <div class="achievements-grid">
+              <div class="achievement-pill">
+                <span class="achievement-icon">🥇</span>
+                <div class="achievement-info">
+                  <h5 data-translate="ac1_title">SEVA Shield</h5>
+                  <p data-translate="ac1_desc">Helped feed 50+ families</p>
+                </div>
+              </div>
+              <div class="achievement-pill">
+                <span class="achievement-icon">🌲</span>
+                <div class="achievement-info">
+                  <h5 data-translate="ac2_title">Prakriti Medal</h5>
+                  <p data-translate="ac2_desc">Planted 10 saplings</p>
+                </div>
+              </div>
+              <div class="achievement-pill" style="opacity: 0.4;">
+                <span class="achievement-icon">🎓</span>
+                <div class="achievement-info">
+                  <h5 data-translate="ac3_title">Literacy Anchor</h5>
+                  <p data-translate="ac3_desc">Support 5 tablets</p>
+                </div>
+              </div>
+              <div class="achievement-pill" style="opacity: 0.4;">
+                <span class="achievement-icon">🔥</span>
+                <div class="achievement-info">
+                  <h5 data-translate="ac4_title">Elite Patron</h5>
+                  <p data-translate="ac4_desc">Top 5% contribution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="section-padding" id="contact" style="border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;" data-translate="con_title">Contact Central</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);" data-translate="con_subtitle">
+          Connect with the administrative centers of InAmigos Foundation.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;" data-translate="con_form_title">Direct Inquiry Form</h3>
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="cName" data-translate="f_name">Full Name</label>
+                <input type="text" id="cName" class="form-input" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="cEmail" data-translate="f_email">Email Address</label>
+                <input type="email" id="cEmail" class="form-input" required placeholder="Your email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject" data-translate="f_subject">Subject</label>
+              <input type="text" id="cSubject" class="form-input" required placeholder="Inquiry subject">
+            </div>
+            <div class="form-group">
+              <label for="cMessage" data-translate="f_message">Message Details</label>
+              <textarea id="cMessage" class="form-input" rows="4" required placeholder="Enter details..." style="resize: none;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="con_btn_submit">Send Message</button>
+          </form>
+          <div id="contactFeedback" style="margin-top: 1rem; color: var(--primary); font-weight: 700; font-size: 0.9rem; text-align: center;"></div>
+        </div>
+
+        <div class="contact-info-wrap">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-details">
+              <h4 data-translate="ci_loc_title">Head Office Address</h4>
+              <p>Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh, India - 495555</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-details">
+              <h4 data-translate="ci_mail_title">Electronic Mail</h4>
+              <p>support@inamigosfoundation.org.in</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-details">
+              <h4 data-translate="ci_phone_title">Helpline Number</h4>
+              <p>+91 626 730 9902</p>
+            </div>
+          </div>
+
+          <!-- Organic Vector Map Outline -->
+          <div class="contact-map">
+            <svg width="100%" height="100%" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100%" height="100%" fill="var(--bg-hover)" />
+              <path d="M 20,40 L 80,40 L 100,100 L 280,100 M 150,20 L 150,180 M 50,150 L 250,150" stroke="var(--border-color)" stroke-width="2" fill="none" />
+              <circle cx="150" cy="100" r="24" fill="none" stroke="var(--primary)" stroke-width="1" opacity="0.3" class="pulse-ring" />
+              <circle cx="150" cy="100" r="5" fill="var(--primary)" />
+              <text x="160" y="96" fill="var(--text-primary)" font-size="9" font-family="sans-serif" font-weight="bold">Bilaspur HQ</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bar">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg" alt="InAmigos Foundation Logo" class="logo-theme logo-light">
+            <img src="https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg" alt="InAmigos Foundation Logo" class="logo-theme logo-dark">
+            <span class="gradient-text">InAmigos 2.0</span>
+          </div>
+          <p class="footer-desc" data-translate="foot_desc">
+            Section 8 registered non-profit organization (CIN: U85300CT2020NPL010777). Certified 80G, 12A, and NITI Aayog CSR-1.
+          </p>
+          
+          <!-- Standard SVG Social links -->
+          <div class="footer-socials">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/inamigos/" target="_blank" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/manavi-jaiswal-07a7662bb" target="_blank" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-translate="foot_h1">Active Sectors</h4>
+          <ul class="footer-links">
+            <li><a href="#projects" data-translate="p1_title">Project SEVA</a></li>
+            <li><a href="#projects" data-translate="p2_title">Project BACHPANSHALA</a></li>
+            <li><a href="#projects" data-translate="p3_title">Project UDAAN</a></li>
+            <li><a href="#projects" data-translate="p4_title">Project JEEV</a></li>
+            <li><a href="#projects" data-translate="p5_title">Project PRAKRITI</a></li>
+            <li><a href="#projects" data-translate="p6_title">Project VIKAS</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-translate="foot_h2">NGO Architecture</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-translate="nav_about">About Us</a></li>
+            <li><a href="#ai-solutions" data-translate="nav_ai">AI Solutions</a></li>
+            <li><a href="#impact" data-translate="nav_impact">Impact Dashboard</a></li>
+            <li><a href="#stories" data-translate="nav_stories">Success Chronicles</a></li>
+            <li><a href="#donor-portal" data-translate="nav_donor">Donor Hub</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 InAmigos Foundation. Built with advanced technology & Compassion. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+     INTERACTIVE DYNAMIC MODALS (FOR AI MODULES)
+     ========================================== */ -->
+  
+  <!-- 1. AI Volunteer Assistant Chatbot Widget (Floating bottom right) -->
+  <button class="chatbot-trigger" id="chatbotTrigger" aria-label="Open AI Assistant" onclick="toggleChatWindow()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chat-header">
+      <div class="chat-bot-identity">
+        <div class="chat-avatar">🤖</div>
+        <div class="chat-title">
+          <h3 data-translate="bot_name">ERA</h3>
+          <p data-translate="bot_online">ERA Active</p>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChatWindow()">✖</button>
+    </div>
+    
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <span data-translate="bot_hello">Greetings! I am ERA 🤖, your smart InAmigos coordinator. How can I guide your volunteering, CSR funding, or support requirements today?</span>
+        <div class="chat-suggested">
+          <button class="suggested-btn" onclick="sendSuggestedChat('Is InAmigos NITI Aayog registered?')" data-translate="s1">CSR Credentials</button>
+          <button class="suggested-btn" onclick="sendSuggestedChat('Where are the active food centers?')" data-translate="s2">SEVA Locations</button>
+          <button class="suggested-btn" onclick="sendSuggestedChat('How can I apply for Project Vikas internship?')" data-translate="s3">Vikas Internships</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Write question..." onkeypress="handleChatEnter(event)">
+      <button class="chat-send" onclick="sendUserChat()" aria-label="Send Message">➤</button>
+    </div>
+  </div>
+
+  <!-- 2. AI Volunteer Matching System Modal -->
+  <div class="modal-overlay" id="modalMatching">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalMatching')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="m_m_title">AI Volunteer Matching System</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="m_m_desc">Input your professional skill sets and operational availability. The local matching classifier calculates the fit percentage across our 6 projects.</p>
+      
+      <div class="form-group">
+        <label data-translate="m_m_s1">Select Your Primary Skill Set</label>
+        <select id="matchSkill" class="form-input">
+          <option value="teaching" data-translate="ms_teaching">Academic Mentorship & Child Tutoring</option>
+          <option value="cooking" data-translate="ms_cooking">Food Preparation & Logistics Routing</option>
+          <option value="marketing" data-translate="ms_marketing">Digital Promotion, Graphics & Copywriting</option>
+          <option value="animal" data-translate="ms_animal">Veterinary Care & Rescue Management</option>
+          <option value="horticulture" data-translate="ms_horticulture">Urban Plantation & Sapling Seed Bombing</option>
+          <option value="finance" data-translate="ms_finance">CSR Relations, Auditing & Bookkeeping</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label data-translate="m_m_s2">What is your Availability?</label>
+        <div class="checkbox-grid">
+          <label class="checkbox-label"><input type="checkbox" id="matchWeekends" checked> <span data-translate="mv_wknd">Weekends (Sat - Sun)</span></label>
+          <label class="checkbox-label"><input type="checkbox" id="matchWeekdays"> <span data-translate="mv_wkdy">Weekdays (Mon - Fri)</span></label>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="runMatchingAlgorithm()" style="width:100%;" data-translate="m_m_btn">Run Match Finder</button>
+
+      <div class="ai-response-box" id="matchingResponse">
+        <h4>🧬 <span data-translate="m_m_res_h">Match Recommendations</span></h4>
+        <div class="ai-response-content" id="matchingResponseContent">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Smart Donation Advisor Modal -->
+  <div class="modal-overlay" id="modalAdvisor">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalAdvisor')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="da_title">Smart Donation Advisor</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="da_desc">Our smart calculator constructs the optimal donation allocation portfolio based on your impact preferences.</p>
+      
+      <div class="form-group">
+        <label data-translate="da_label_amount">Target Contribution Amount (INR)</label>
+        <div class="slider-group">
+          <div class="slider-val-wrap">
+            <span style="font-weight: 700; color: var(--primary);">₹1,000</span>
+            <span id="advisorSliderText" style="font-weight: 800; color: var(--primary);">₹10,000</span>
+            <span style="font-weight: 700; color: var(--primary);">₹1,00,000</span>
+          </div>
+          <input type="range" id="advisorAmount" class="slider-input" min="1000" max="100000" step="5000" value="10000" oninput="updateAdvisorSliderText(this.value)">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label data-translate="da_label_focus">Primary Area of Interest</label>
+        <select id="advisorFocus" class="form-input">
+          <option value="balanced" data-translate="df_balanced">Balanced Allocation (Across All Projects)</option>
+          <option value="children" data-translate="df_kids">Child Education & Digital Literacy (Bachpanshala)</option>
+          <option value="hunger" data-translate="df_hunger">Food Security & Daily Shelters (Seva)</option>
+          <option value="environment" data-translate="df_green">Climate Offset & Sapling Care (Prakriti)</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" onclick="runDonationAdvisor()" style="width:100%;" data-translate="da_btn">Assemble Allocation Model</button>
+
+      <div class="ai-response-box" id="advisorResponse">
+        <h4>💰 <span data-translate="da_res_h">Recommended CSR Allocation Portfolio</span></h4>
+        <div class="ai-response-content" id="advisorResponseContent">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. AI Impact Predictor Modal -->
+  <div class="modal-overlay" id="modalPredictor">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalPredictor')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="ip_title">AI Impact Predictor</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="ip_desc">Compute direct socio-ecological benefits and predicted beneficiaries matching your donation volume.</p>
+      
+      <div class="form-group">
+        <label for="predictAmount" data-translate="ip_label_amount">Enter Donation Amount (INR)</label>
+        <input type="number" id="predictAmount" class="form-input" value="5000" min="500" step="500">
+      </div>
+
+      <button class="btn btn-primary" onclick="runImpactPredictor()" style="width:100%;" data-translate="ip_btn">Calculate Forecast</button>
+
+      <div class="ai-response-box" id="predictorResponse">
+        <h4>🔮 <span data-translate="ip_res_h">Impact Forecast Summary</span></h4>
+        <div class="ai-response-content" id="predictorResponseContent">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. AI Success Story Generator Modal -->
+  <div class="modal-overlay" id="modalStory">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalStory')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="sg_title">AI Success Story Generator</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="sg_desc">Our engine compiles raw ground logs and achievements into structured narrative stories.</p>
+      
+      <div class="form-group">
+        <label data-translate="sg_label_proj">Select Target Initiative</label>
+        <select id="storyProject" class="form-input">
+          <option value="seva" data-translate="p1_title">Project SEVA</option>
+          <option value="bachpanshala" data-translate="p2_title">Project BACHPANSHALA</option>
+          <option value="udaan" data-translate="p3_title">Project UDAAN</option>
+          <option value="jeev" data-translate="p4_title">Project JEEV</option>
+          <option value="prakriti" data-translate="p5_title">Project PRAKRITI</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="storyName" data-translate="sg_label_name">Beneficiary Name (Optional)</label>
+        <input type="text" id="storyName" class="form-input" placeholder="e.g. Ramesh Sahu">
+      </div>
+
+      <button class="btn btn-primary" onclick="runStoryGenerator()" style="width:100%;" data-translate="sg_btn">Compile Impact Story</button>
+
+      <div class="ai-response-box" id="storyResponse">
+        <div class="story-terminal" id="storyTerminal"></div>
+        <h4>✍ <span data-translate="sg_res_h">Synthesized Impact Narrative</span></h4>
+        <div class="ai-response-content" id="storyResponseContent" style="line-height: 1.7; font-style: italic;">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. AI Grant Recommendation Engine Modal -->
+  <div class="modal-overlay" id="modalGrant">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalGrant')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="gr_title">AI Grant Recommendation Engine</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="gr_desc">Matches NGO operational projects with current active CSR grants and national funding agencies.</p>
+      
+      <div class="form-group">
+        <label data-translate="gr_label_domain">NGO Corporate Sector Scope</label>
+        <select id="grantDomain" class="form-input">
+          <option value="rural" data-translate="gd_rural">Rural Tribal Empowerment (Women & Education)</option>
+          <option value="health" data-translate="gd_health">Nutrition, Slum Feeding & Disaster Relief</option>
+          <option value="tech" data-translate="gd_tech">Digital Literacy & STEM Training for Youth</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" onclick="runGrantMatch()" style="width:100%;" data-translate="gr_btn">Query CSR Database</button>
+
+      <div class="ai-response-box" id="grantResponse">
+        <h4>🛡 <span data-translate="gr_res_h">Matching Grant Options</span></h4>
+        <div class="ai-response-content" id="grantResponseContent">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. AI Beneficiary Support Assistant Modal -->
+  <div class="modal-overlay" id="modalBeneficiary">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalBeneficiary')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="bs_title">AI Beneficiary Support Locator</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="bs_desc">Locate the nearest active feeding centers, Bachpanshaala schools, or clothing distribution points instantly.</p>
+      
+      <div class="form-group">
+        <label for="beneficiaryZip" data-translate="bs_label_dist">Select Nearest District (CG)</label>
+        <select id="beneficiaryZip" class="form-input">
+          <option value="raipur">Raipur District</option>
+          <option value="durg">Durg District / Bhilai</option>
+          <option value="bilaspur">Bilaspur District</option>
+          <option value="bastar">Bastar / Jagdalpur District</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" onclick="runBeneficiaryLocator()" style="width:100%;" data-translate="bs_btn">Search Resource Bases</button>
+
+      <div class="ai-response-box" id="beneficiaryResponse">
+        <h4>🤝 <span data-translate="bs_res_h">Active Ground Resources Found</span></h4>
+        <div class="ai-response-content" id="beneficiaryResponseContent">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Predictive Campaign Analytics Modal -->
+  <div class="modal-overlay" id="modalAnalytics">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeAIModal('modalAnalytics')">✖</button>
+      <h3 class="gradient-text" style="font-size: 1.75rem; margin-bottom: 1rem;" data-translate="pa_title">Predictive Campaign Analytics</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;" data-translate="pa_desc">Heuristic statistical forecasts modeling future outreach, funds raised, and saplings planted over the next 12 months.</p>
+      
+      <div class="form-group">
+        <label data-translate="pa_label_growth">Target Annual Growth Rate Accent</label>
+        <div class="slider-group">
+          <div class="slider-val-wrap">
+            <span>5%</span>
+            <span id="analyticsSliderText" style="font-weight: 800; color: var(--primary);">20%</span>
+            <span>50%</span>
+          </div>
+          <input type="range" id="analyticsGrowth" class="slider-input" min="5" max="50" step="5" value="20" oninput="updateAnalyticsSliderText(this.value)">
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="runCampaignAnalytics()" style="width:100%;" data-translate="pa_btn">Run Predictive Modeling</button>
+
+      <div class="ai-response-box" id="analyticsResponse">
+        <h4>📊 <span data-translate="pa_res_h">Outreach Projections Summary</span></h4>
+        <div class="ai-response-content" id="analyticsResponseContent">
+          <!-- Populated by script -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Premium Tax Impact Certificate Modal -->
+  <div class="modal-overlay" id="modalCertificate">
+    <div class="modal-content" style="max-width: 620px; padding: 1.25rem;">
+      <button class="modal-close-btn" onclick="closeAIModal('modalCertificate')">✖</button>
+      
+      <div class="certificate-frame">
+        <div class="cert-stamp">InAmigos 2.0</div>
+        <h3 class="cert-title" data-translate="cert_title">Certificate of Impact</h3>
+        <p class="cert-sub" data-translate="cert_sub">NITI AAYOG REGISTERED • 80G COMPLIANT</p>
+        
+        <p class="cert-body">
+          This certified social ledger hereby recognizes the noble contribution of <br>
+          <strong id="certDonorName" style="font-size: 1.15rem;">Vikram Sharma</strong><br>
+          for deploying resources amounting to <strong id="certDonorAmount">₹10,000</strong> toward <strong id="certDonorProject">Project BACHPANSHALA</strong>, directly facilitating community advancement in Chhattisgarh operational zones.
+        </p>
+        
+        <div class="cert-sign-grid">
+          <div class="cert-sign">
+            <div class="cert-sign-img">Govind Shukla</div>
+            <h5 data-translate="cert_ceo_sign">Govind Shukla (CEO)</h5>
+          </div>
+          <div class="cert-sign">
+            <div class="cert-sign-img" style="color: var(--primary);">NITI Aayog</div>
+            <h5 data-translate="cert_verified">CSR-1 Verified</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div style="margin-top: 1rem; text-align: center;">
+        <button class="btn btn-primary" onclick="window.print()" style="font-size: 0.8rem;" data-translate="cert_btn_print">Print Certificate</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Logic Modules -->
+  <script src="js/app.js"></script>
+  <script src="js/ai-solutions.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/donor.js"></script>
+
+</body>
+</html>

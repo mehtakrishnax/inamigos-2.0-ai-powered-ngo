@@ -1,0 +1,451 @@
+/* ==========================================
+   IMPACT STATISTICS GRID
+   ========================================== */
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .impact-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-card {
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 204, 131, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stat-info h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.15rem;
+}
+
+.stat-info p {
+  font-size: 0.775rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   AI RESOURCE ALLOCATION DOCK CONTROL
+   ========================================== */
+.resource-allocator-ui {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  .resource-allocator-ui {
+    grid-template-columns: 1fr;
+  }
+}
+
+.region-node-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.region-node-card {
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.region-node-card.active, .region-node-card:hover {
+  background: hsl(var(--bg-hover));
+  border-color: var(--primary);
+}
+
+.region-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.region-name {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.region-status {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+}
+
+.region-status.critical {
+  color: #d9383a;
+  background: rgba(217, 56, 58, 0.08);
+}
+
+.region-status.stable {
+  color: #00cc83;
+  background: rgba(0, 204, 131, 0.08);
+}
+
+.region-resources {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.region-resource-pill {
+  background: hsl(var(--bg-hover));
+  border: 1px solid var(--glass-border);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  color: var(--text-secondary);
+}
+
+.dispatch-map-container {
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.map-svg-canvas {
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+  margin: auto;
+}
+
+.map-node {
+  cursor: pointer;
+}
+
+.dispatch-route {
+  stroke-dasharray: 6;
+  animation: dash 35s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* ==========================================
+   DONOR PORTAL / LEDGERS
+   ========================================== */
+.donor-portal-wrap {
+  margin-top: 2.5rem;
+}
+
+.donor-unauthorized {
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.donor-unauthorized-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 204, 131, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.75rem;
+  margin: 0 auto 1.25rem auto;
+}
+
+.donor-portal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+  .donor-portal-header {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+}
+
+.donor-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.donor-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.donor-tier {
+  font-family: var(--font-headings);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-full);
+}
+
+.donor-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .donor-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ledger-card, .achievements-card {
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.ledger-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1.25rem;
+}
+
+.ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.ledger-table th, .ledger-table td {
+  padding: 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ledger-table th {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.ledger-table tr:hover {
+  background: hsl(var(--bg-hover));
+}
+
+.badge-tag-success {
+  background: rgba(0, 204, 131, 0.08);
+  color: var(--primary);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.badge-link-cert {
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.badge-link-cert:hover {
+  text-decoration: underline;
+}
+
+/* Achievements badges */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.achievement-pill {
+  background: hsl(var(--bg-hover));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+}
+
+.achievement-info h5 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.achievement-info p {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   DYNAMIC PREMIUM IMPACT CERTIFICATE (PRINT/MODAL)
+   ========================================== */
+.certificate-frame {
+  border: 8px double var(--primary);
+  background: hsl(var(--bg-card));
+  padding: 2.5rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.cert-stamp {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed var(--primary);
+  border-radius: 50%;
+  margin: 0 auto 1.25rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+}
+
+.cert-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.cert-sub {
+  font-family: var(--font-headings);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 1.75rem;
+}
+
+.cert-body {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto 2rem auto;
+}
+
+.cert-body strong {
+  color: var(--text-primary);
+}
+
+.cert-sign-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 440px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+}
+
+.cert-sign {
+  text-align: center;
+}
+
+.cert-sign-img {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 0.15rem;
+  font-style: italic;
+}
+
+.cert-sign h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}

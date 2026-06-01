@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* LIGHT MODE (Default theme - Clean, professional, premium NGO theme) */
+  --bg-deep: 220, 20%, 97%;       /* #f4f5f8 - Clean soft backdrop */
+  --bg-card: 0, 0%, 100%;         /* #ffffff - Pure white cards */
+  --bg-hover: 220, 20%, 94%;      /* Highlight state */
+  
+  --primary-rgb: 0, 204, 131;     /* InAmigos Emerald Green #00CC83 */
+  --primary: hsl(159, 100%, 40%);
+  --primary-glow: rgba(0, 204, 131, 0.15);
+  
+  --secondary-rgb: 34, 39, 64;    /* InAmigos Corporate Navy #222740 */
+  --secondary: hsl(231, 31%, 19%);
+  --secondary-glow: rgba(34, 39, 64, 0.15);
+
+  --accent-rgb: 255, 74, 121;     /* Compassion Coral Fuchsia */
+  --accent: hsl(344, 100%, 65%);
+  --accent-glow: rgba(255, 74, 121, 0.15);
+
+  --text-primary: hsl(225, 20%, 12%);   /* Deep charcoal */
+  --text-secondary: hsl(225, 12%, 35%); /* Balanced body text */
+  --text-muted: hsl(225, 8%, 55%);
+  
+  --border-color: rgba(34, 39, 64, 0.08);
+  --border-glow: rgba(0, 204, 131, 0.2);
+  --border-primary-glow: rgba(34, 39, 64, 0.12);
+
+  /* Structure and Spacing */
+  --font-headings: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+  --shadow-sm: 0 4px 16px rgba(34, 39, 64, 0.06);
+  --shadow-md: 0 10px 30px rgba(34, 39, 64, 0.08);
+  --shadow-lg: 0 20px 50px rgba(34, 39, 64, 0.12);
+  
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(34, 39, 64, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(34, 39, 64, 0.06);
+  --glass-blur: blur(12px);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* DARK MODE OVERRIDES */
+body.dark-theme {
+  --bg-deep: 228, 45%, 5%;       /* #070a13 - Obsidian dark */
+  --bg-card: 228, 38%, 9%;       /* #0a0e1b - Obsidian card base */
+  --bg-hover: 228, 35%, 13%;     /* Highlight */
+  
+  --primary-rgb: 0, 204, 131;     /* InAmigos Green */
+  --primary: hsl(159, 100%, 40%);
+  --primary-glow: rgba(0, 204, 131, 0.35);
+  
+  --secondary-rgb: 0, 245, 212;  /* Cyber Turquoise for dark modes */
+  --secondary: hsl(172, 100%, 48%);
+  --secondary-glow: rgba(0, 245, 212, 0.3);
+
+  --accent-rgb: 255, 74, 121;     /* Coral */
+  --accent: hsl(344, 100%, 65%);
+  --accent-glow: rgba(255, 74, 121, 0.3);
+
+  --text-primary: hsl(0, 0%, 98%);
+  --text-secondary: hsl(225, 20%, 75%);
+  --text-muted: hsl(225, 15%, 55%);
+  
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-glow: rgba(0, 204, 131, 0.25);
+  --border-primary-glow: rgba(0, 204, 131, 0.2);
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.7);
+  
+  --glass-bg: rgba(10, 14, 27, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --glass-blur: blur(20px);
+}
+
+/* Base keyframe animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
